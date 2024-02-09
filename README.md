@@ -4,7 +4,7 @@
 # Clone the project in your machine =>
 # Copy the command below:
 #
-# git colne https://github.com/wkndavid/replace_shp_xlsx_csv_geo
+# git clone https://github.com/wkndavid/replace_shp_xlsx_csv_geo
 # 
 # #Modules#
 #  => Install | pandas | re => reGex module python | geopandas 
