@@ -6,10 +6,11 @@
 #
 # git clone 'https://github.com/wkndavid/replace_shp_xlsx_csv_geo'
 # 
-# #Modules#
+# # Install Modules and Dependencies
+# # Modules #
 #  => Install | pandas | re => reGex module python | geopandas 
 #
-# #Dependencies# 
+# # Dependencies # 
 # Use pip install for install dependencies or global modules
 #  dependencies : 
 # {
