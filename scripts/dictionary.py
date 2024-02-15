@@ -6,9 +6,9 @@ def traduzir_palavra(palavra, dicionario):
     return dicionario.get(palavra, palavra)
 
 # Substitua 'sua_planilha.xlsx' pelo caminho correto do seu arquivo xlsx =obs>  
-# Execute em algum => Terminal / Linha de comando / Shell => o comando 'pwd' (nome do diretório do arquivo exemplo do retorno => /home/david/autom/setor/setor.shp ou C:\Users\Documents\arquivo.shp => para achar o caminho do arquivo na estrutura de pastas...
+# Execute em algum => Terminal / Linha de comando / Shell => o comando 'pwd' (nome do diretório do arquivo exemplo do retorno => /home/david/autom/example_shp.shp ou C:\Users\Documents\exemplo_shp.shp => para achar o caminho do arquivo na estrutura de pastas...
 
-df = pd.read_excel('/home/david/autom/src/teste.xlsx', engine='openpyxl') # => Openpyxl => dependência que lê o arquivo excel .xlsx 
+df = pd.read_excel('/home/david/autom/files/excel_example_file.xlsx', engine='openpyxl') # => Openpyxl => dependência que lê o arquivo excel .xlsx 
 
 # Dicionário de traduções
 traducoes = {
