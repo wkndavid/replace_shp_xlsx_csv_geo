@@ -6,9 +6,9 @@ def traduzir_palavra(palavra, dicionario):
     return dicionario.get(palavra, palavra)
 
 # Substitua 'sua_planilha.xlsx' pelo caminho correto do seu arquivo xlsx =obs>  
-# Execute em algum => Terminal / Linha de comando / Shell => o comando 'pwd' (nome do diretório do arquivo exemplo do retorno => /home/david/autom/example_shp.shp ou C:\Users\Documents\exemplo_shp.shp => para achar o caminho do arquivo na estrutura de pastas...
+# Execute em algum => Terminal / Linha de comando / Shell => o comando 'pwd' (nome do diretório do arquivo exemplo do retorno => /home/david/autom/example_shp.shp ou C:\\Users\\Documents\\exemplo_shp.shp => para achar o caminho do arquivo na estrutura de pastas...
 
-df = pd.read_excel('/home/david/autom/files/excel_example_file.xlsx', engine='openpyxl') # => Openpyxl => dependência que lê o arquivo excel .xlsx 
+df = pd.read_excel('/home/david/autom/replace_shp_xlsx_csv_geo/files/excel_example_file.xlsx', engine='openpyxl') # => Openpyxl => dependência que lê o arquivo excel .xlsx 
 
 # Dicionário de traduções
 traducoes = {
@@ -325,7 +325,9 @@ traducoes = {
 }
 
 # Aplica a tradução à coluna 'se_setor' e aplica as regras de regEx para manipular caracteres específicos...
+# Repetir o nome da coluna para recolocação nas células caso queira criar uma nova tabela trocar o nome da tabela na referência
+# Ex: df['nova_tabela] = df['se_setor']...
 df['se_setor'] = df['se_setor'].apply(lambda x: ' '.join(traduzir_palavra(palavra, traducoes) for palavra in re.findall(r'\b\w+\b', str(x)))).str.upper()
 
 # Salva o DataFrame atualizado em um novo arquivo xlsx já traduzindo o valor das células
-df.to_excel('/home/david/autom/src/traduzido_teste.xlsx', index=False)
+df.to_excel('/home/david/autom/replace_shp_xlsx_csv_geo/files/translate_result.xlsx', index=False)

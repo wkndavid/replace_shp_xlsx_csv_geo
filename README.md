@@ -20,4 +20,4 @@
 #    'pyarrow'
 # }
 #
-# See requeriments.txt file for more.
+# See ./reqs/requeriments.txt file for more.
