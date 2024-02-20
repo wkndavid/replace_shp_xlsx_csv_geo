@@ -10,11 +10,11 @@
 # 
 # # Install Modules and Dependencies
 # # Modules #
-#  => Install | pandas | re => reGex module python | geopandas 
+#  => Install | Pandas | Re => reGex module Python | Geopandas 
 #
 # # Dependencies # 
 # Use pip install for install dependencies or global modules.
-#  dependencies : 
+# main_dependencies: 
 # {
 #    'openpyxl',
 #    'pyarrow'
