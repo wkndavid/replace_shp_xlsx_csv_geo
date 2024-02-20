@@ -4,7 +4,7 @@
 # Install python && pip (package installer python) or use venv enviroment
 #
 # Clone the project in your machine,
-# Copy the command below:
+# Copy the command below and paste in any cli:
 #
 # git clone 'https://github.com/wkndavid/replace_shp_xlsx_csv_geo'
 # 
@@ -20,4 +20,4 @@
 #    'pyarrow'
 # }
 #
-# See ./reqs/requeriments.txt file for more.
+# See ./reqs/requeriments.txt file for dependencies.
